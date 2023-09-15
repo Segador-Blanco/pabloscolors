@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--encabezado de la pagina-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Colores RGBA</title>
+</head>
+
+<!--cuerpo de la pagina-->
+<body>
+
+
+    <font face="arial">
+        <h1 class="h1">COLORES RGBA</h1>
+        <div class="btn-group" style="margin-left: 400px; margin-top: 50px;">
+            <br>
+            <center>
+                <img style="margin-left: -400px;" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/RGBA_comp.png"></img>
+                <p style="margin-left: -400px;">Imágen Ilustrativa</p>
+            </center>
+            <!--botton 1-->
+            <button id="mostrarSection1" class="cafe1RGBA"></button>
+            <!--descripción-->
+            <section id="section1" class="section1RGBA">
+                <h1>rgba(139, 69, 19, 0.089)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.089</h1>
+            </section>
+            <!--boton 2-->
+            <button id="mostrarSection2" class="cafe2RGBA"></button>
+            <!--descripción-->
+            <section id="section2" class="section2RGBA">
+                <h1>rgba(139, 69, 19, 0.201)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.201</h1>
+            </section>
+            <!--boton 3-->
+            <button id="mostrarSection3" class="cafe3RGBA"></button>
+            <!--descripción-->
+            <section id="section3" class="section3RGBA">
+                <h1>rgba(139, 69, 19, 0.24)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.24</h1>
+            </section>
+            <!--boton 4-->
+            <button id="mostrarSection4" class="cafe4RGBA"></button>
+            <!--descripción-->
+            <section id="section4" class="section4RGBA">
+                <h1>rgba(139, 69, 19, 0.279)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.279</h1>
+            </section>
+            <!--boton 5-->
+            <button id="mostrarSection5" class="cafe5RGBA"></button>
+            <!--descripción-->
+            <section id="section5" class="section5RGBA">
+                <h1>rgba(139, 69, 19, 0.457)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.457</h1>
+            </section>
+            <br>
+            <!--boton 6-->
+            <button id="mostrarSection6" class="cafe6RGBA"></button>
+            <!--descripción-->
+            <section id="section6" class="section6RGBA">
+                <h1>rgba(139, 69, 19, 0.527)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.527</h1>
+            </section>
+            <!--boton 7-->
+            <button id="mostrarSection7" class="cafe7RGBA"></button>
+            <!--descripción-->
+            <section id="section7" class="section7RGBA">
+                <h1>rgba(139, 69, 19, 0.58)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.58</h1>
+            </section>
+             <!--boton 8-->
+            <button id="mostrarSection8" class="cafe8RGBA"></button>
+            <!--descripción-->
+            <section id="section8" class="section8RGBA">
+                <h1>rgba(139, 69, 19, 0.717)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 0.717</h1>
+            </section>
+             <!--boton 9-->
+            <button id="mostrarSection9" class="cafe9RGBA"></button>
+            <!--descripción-->
+            <section id="section9" class="section9RGBA">
+                <h1>rgba(139, 69, 19,  0.836)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia:  0.836</h1>
+            </section>
+             <!--boton 10-->
+            <button id="mostrarSection10" class="cafe10RGBA"></button>
+            <!--descripción-->
+            <section id="section10" class="section10RGBA">
+                <h1>rgba(139, 69, 19, 1)</h1>
+                <h1>Rojo: 139</h1>
+                <h1>Verde: 69</h1>
+                <h1>Azul: 19</h1>
+                <h1>Transparencia: 1</h1>
+            </section>
+
+             <br>
+            <script>
+            //boton27//
+                // Función para mostrar el section deseado y ocultar el otro
+                function mostrarSection(sectionId) {
+                    const section1 = document.getElementById("section1");
+                    const section2 = document.getElementById("section2");
+                    const section3 = document.getElementById("section3");
+                    const section4 = document.getElementById("section4");
+                    const section5 = document.getElementById("section5");
+                    const section6 = document.getElementById("section6");
+                    const section7 = document.getElementById("section7");
+                    const section8 = document.getElementById("section8");
+                    const section9 = document.getElementById("section9");
+                    const section10 = document.getElementById("section10");
+                    if (sectionId === "section1") {
+                        section1.style.display = "block";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section2") {
+                        section1.style.display = "none";
+                        section2.style.display = "block";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section3") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "block";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section4") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "block";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section5") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "block";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section6") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "block";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section7") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "block";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section8") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "block";
+                        section9.style.display = "none";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section9") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "block";
+                        section10.style.display = "none";
+                    } else if (sectionId === "section10") {
+                        section1.style.display = "none";
+                        section2.style.display = "none";
+                        section3.style.display = "none";
+                        section4.style.display = "none";
+                        section5.style.display = "none";
+                        section6.style.display = "none";
+                        section7.style.display = "none";
+                        section8.style.display = "none";
+                        section9.style.display = "none";
+                        section10.style.display = "block";
+                    }
+                ;}
+                
+                // Asocia la función al evento clic del botón Mostrar Fondo 1
+                const botonMostrar1 = document.getElementById("mostrarSection1");
+                botonMostrar1.addEventListener("click", () => mostrarSection("section1"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 2
+                const botonMostrar2 = document.getElementById("mostrarSection2");
+                botonMostrar2.addEventListener("click", () => mostrarSection("section2"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 3
+                const botonMostrar3 = document.getElementById("mostrarSection3");
+                botonMostrar3.addEventListener("click", () => mostrarSection("section3"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 4
+                const botonMostrar4 = document.getElementById("mostrarSection4");
+                botonMostrar4.addEventListener("click", () => mostrarSection("section4"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 5
+                const botonMostrar5 = document.getElementById("mostrarSection5");
+                botonMostrar5.addEventListener("click", () => mostrarSection("section5"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 6
+                const botonMostrar6 = document.getElementById("mostrarSection6");
+                botonMostrar6.addEventListener("click", () => mostrarSection("section6"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 7
+                const botonMostrar7 = document.getElementById("mostrarSection7");
+                botonMostrar7.addEventListener("click", () => mostrarSection("section7"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 8
+                const botonMostrar8 = document.getElementById("mostrarSection8");
+                botonMostrar8.addEventListener("click", () => mostrarSection("section8"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 9
+                const botonMostrar9 = document.getElementById("mostrarSection9");
+                botonMostrar9.addEventListener("click", () => mostrarSection("section9"));
+
+                // Asocia la función al evento clic del botón Mostrar Fondo 10
+                const botonMostrar10 = document.getElementById("mostrarSection10");
+                botonMostrar10.addEventListener("click", () => mostrarSection("section10"));
+            
+            </script>
+          </div>
+    </font>
+    <center>
+        <br><br>
+        <a href="pagina principal.html" id="botonj">Volver al inicio</a>
+    </center>
+</body>
+</html>
